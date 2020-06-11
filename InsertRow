@@ -1,0 +1,79 @@
+<html>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+
+
+<table id="myTable">
+  
+
+    <input type="button" value="Pokaz kolumne nr.1" onclick="return tabela1()"> <br>
+    <input type="button" value="Pokaz kolumne nr.2" onclick="return tabela2()"> <br>
+    <input type="button" value="Pokaz kolumne nr.3" onclick="return tabela3()"> <br>
+    <input type="button" value="Usun" onclick="return usuntabele()"> <br><br>
+
+
+
+<script>
+
+
+function usuntabele() {
+  document.getElementById("myTable").deleteRow(0);
+  document.getElementById("myTable").deleteRow(0);
+  document.getElementById("myTable").deleteRow(0);
+  document.getElementById("myTable").deleteRow(0);
+}
+
+
+function tabela1() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0)
+  var cell1 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell2 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell3 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell4 = row.insertCell(0); 
+    
+  cell1.innerHTML = "2x10=20";
+  cell2.innerHTML = "6";
+  cell3.innerHTML = "8";
+  cell4.innerHTML = "Kolumna 1" 
+}
+  function tabela2() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell2 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell3 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell4 = row.insertCell(0);
+    
+  cell1.innerHTML = "10x2=20";
+  cell2.innerHTML = "4";
+  cell3.innerHTML = "5";
+  cell4.innerHTML = "Kolumna 2";
+}
+function tabela3() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell2 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell3 = row.insertCell(0);
+  var row = table.insertRow(0);
+  var cell4 = row.insertCell(0);
+    
+  cell1.innerHTML = "10x2=20";
+  cell2.innerHTML = "3";
+  cell3.innerHTML = "7";
+  cell4.innerHTML = "Kolumna 3";
+}
+</script>
+</html>
